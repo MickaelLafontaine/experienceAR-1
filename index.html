@@ -110,7 +110,13 @@
     </a-assets>
 
     <a-marker type="barcode" value="0" size="1.5">
-      <a-image src="#vid00" rotation="90 0 0" width="2" height="2"></a-image>
+      <a-entity material="shader: chromakey; src: #vid00; chroma: true; color: 0. 0. 0."
+        geometry="primitive: plane; width:  1; height:  1" position="0  0  0" rotation="270  0  0" side="double">
+      </a-entity>
+
+      <a-entity material="shader: chromakey; src: #vid00; chroma: true; color: 0. 0. 0."
+      geometry="primitive: plane; width:  1; height:  1" position="0  1  0" rotation="270  0  0" side="double">
+    </a-entity>
 
       <!--
       <a-box color="#143F6B" depth="1" height="1" width="1"></a-box>
