@@ -20,13 +20,19 @@
     smooth=" true" smoothCount="5" smoothTolerance=".05" smoothThreshold="5" sourceWidth="800" sourceHeight="600"
     displayWidth="1920" displayHeight="1080">
 
+  <!--
     <a-assets>
       <img id="m00" src="./images/femme1000.jpg">
-      
     </a-assets> 
+-->
+
+    <a-assets>
+      <video id="vid00" src="assets/cristaux.mp4" autoplay="true" loop="true" preload="auto" controls="true"
+        muted="true" playsinline="" webkit-playsinline=""></video>
+    </a-assets>
 
     <a-marker type="barcode" value="0" size="1.5">
-      <a-image src="#m00" rotation="90 0 0" width="2" height="2"></a-image>
+      <a-image src="#vid00" rotation="90 0 0" width="2" height="2"></a-image>
 
       <!--
       <a-box color="#143F6B" depth="1" height="1" width="1"></a-box>
